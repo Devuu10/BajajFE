@@ -10,7 +10,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput); // Parsing JSON input
-      const res = await axios.post('https://sittu01.pythonanywhere.com/bfhl', parsedInput);
+      const res = await axios.post('https://devansh10.pythonanywhere.com/bfhl', parsedInput);
       setResponse(res.data); // Setting the response in state
     } catch (error) {
       console.error('Error submitting JSON:', error); // Handling errors
